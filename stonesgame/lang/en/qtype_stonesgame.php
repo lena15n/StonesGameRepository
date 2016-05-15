@@ -15,21 +15,21 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qtype_YOURQTYPENAME', language 'en', branch 'MOODLE_20_STABLE'
+ * Strings for component 'qtype_stonesgame', language 'en', branch 'MOODLE_20_STABLE'
  *
  * @package    qtype
- * @subpackage YOURQTYPENAME
- * @copyright  THEYEAR YOURNAME (YOURCONTACTINFO)
+ * @subpackage stonesgame
+ * @copyright  2016 ln15ln (MYCONTACTINFO)
 
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-$string['pluginname'] = 'YOURQTYPENAME';
+$string['pluginname'] = 'stonesgame';
 $string['pluginname_help'] = 'Create a cloze question type with embedded response fields in the question text to enter a numeric
 or text value or select a value from a number of options.';
-$string['pluginname_link'] = 'question/type/YOURQTYPENAME';
-$string['pluginnameadding'] = 'Adding a YOURQTYPENAME question';
-$string['pluginnameediting'] = 'Editing a YOURQTYPENAME question';
-$string['pluginnamesummary'] = 'A YOURQTYPENAME question type which allows the embedding of the response fields for various available
+$string['pluginname_link'] = 'question/type/stonesgame';
+$string['pluginnameadding'] = 'Adding a stonesgame question';
+$string['pluginnameediting'] = 'Editing a stonesgame question';
+$string['pluginnamesummary'] = 'A stonesgame question type which allows the embedding of the response fields for various available
 sub questions in the question text.
 
 So the student can enter a numeric or short text answer or choose an answer or answer(s) from

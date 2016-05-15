@@ -15,11 +15,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * YOURQTYPENAME question definition class.
+ * stonesgame question definition class.
  *
  * @package    qtype
- * @subpackage YOURQTYPENAME
- * @copyright  THEYEAR YOURNAME (YOURCONTACTINFO)
+ * @subpackage stonesgame
+ * @copyright  2016 ln15ln (MYCONTACTINFO)
 
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -29,13 +29,13 @@ defined('MOODLE_INTERNAL') || die();
 
 
 /**
- * Represents a YOURQTYPENAME question.
+ * Represents a stonesgame question.
  *
- * @copyright  THEYEAR YOURNAME (YOURCONTACTINFO)
+ * @copyright  2016 ln15ln (MYCONTACTINFO)
 
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class qtype_YOURQTYPENAME_question extends question_graded_automatically_with_countback {
+class qtype_stonesgame_question extends question_graded_automatically_with_countback {
 
     public function get_expected_data() {
         // TODO.
