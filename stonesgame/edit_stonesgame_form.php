@@ -35,6 +35,10 @@ defined('MOODLE_INTERNAL') || die();
 
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
+
+ /* TODO: CHANGE IT
+
+ */
 class qtype_stonesgame_edit_form extends question_edit_form {
 
     protected function definition_inner($mform) {

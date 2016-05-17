@@ -39,6 +39,9 @@ require_once($CFG->dirroot . '/question/type/stonesgame/question.php');
 
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
+
+  /* TODO: CHANGE IT
+  */
 class qtype_stonesgame extends question_type {
 
     public function move_files($questionid, $oldcontextid, $newcontextid) {

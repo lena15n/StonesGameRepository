@@ -24,11 +24,18 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+/* -------------------------Страница всех todo---------------------------
+TODO: проверить и поменять типы аттрибутов в db folder
+
+
+*/
+
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'qtype_stonesgame';
-$plugin->version   = 2013012900;
+$plugin->version   = 2015111600;
 
-$plugin->requires  = 2012062504;
+$plugin->requires  = 2015111000;
 
 $plugin->maturity  = MATURITY_ALPHA;
+
