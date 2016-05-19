@@ -43,6 +43,8 @@ require_once($CFG->dirroot . '/question/type/stonesgame/question.php');
   /* TODO: CHANGE IT
   */
 class qtype_stonesgame extends question_type {
+	
+	
 
     public function move_files($questionid, $oldcontextid, $newcontextid) {
         parent::move_files($questionid, $oldcontextid, $newcontextid);
