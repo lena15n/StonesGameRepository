@@ -1,0 +1,10 @@
+{
+  "name": "moodle-qtype_stonesgame-stonesgame",
+  "builds": {
+    "moodle-qtype_stonesgame-stonesgame": {
+      "jsfiles": [
+        "stonesgame.js"
+      ]
+    }
+  }
+}

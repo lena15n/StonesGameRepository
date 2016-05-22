@@ -1,0 +1,10 @@
+{
+  "name": "moodle-stonesgame-form",
+  "builds": {
+    "moodle-stonesgame-form": {
+      "jsfiles": [
+        "form.js"
+      ]
+    }
+  }
+}

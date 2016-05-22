@@ -1,12 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Lena
- * Date: 19.05.2016
- * Time: 2:55
- */
-echo "fdsgsdgdfhhf";
-echo "fdg";
-echo "Hello World!";
-
+if (strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE') !== FALSE ||
+    strpos($_SERVER['HTTP_USER_AGENT'], 'Trident') !== FALSE) {
+    echo 'You are using Internet Explorer.<br />';
+}
 ?>

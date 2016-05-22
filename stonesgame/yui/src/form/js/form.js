@@ -25,6 +25,19 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+
+/*       самая базовая структура js модуля
+
+
+M.qtype_stonesgame = M.qtype_stonesgame || {};
+     M.qtype_stonesgame.stonesgame = {
+        init: function() {
+        Y.one('#example').set('innerHTML', 'Example content');
+    }
+ };
+ */
+
+
 var DDWTOSDDNAME = 'ddwtos_dd';
 var DDWTOS_DD = function() {
     DDWTOS_DD.superclass.constructor.apply(this, arguments);

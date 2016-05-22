@@ -27,7 +27,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 require_once($CFG->dirroot.'/question/type/ddimageortext/edit_ddtoimage_form_base.php');
-require_once($CFG->dirroot.'/question/type/ddmarker/shapes.php');
+//require_once($CFG->dirroot.'/question/type/ddmarker/shapes.php');
 
 define('QTYPE_DDMARKER_ALLOWED_TAGS_IN_MARKER', '<br><i><em><b><strong><sup><sub><u>');
 
@@ -43,6 +43,9 @@ class qtype_ddmarker_edit_form extends qtype_ddtoimage_edit_form_base {
         return 'ddmarker';
     }
 
+    /*
+     * добавляет новые элементы на форму для вопроса опред типа
+     * */
     protected function definition_inner($mform) {
         $mform->addElement('advcheckbox', 'showmisplaced', ' ',
                                                 get_string('showmisplaced', 'qtype_ddmarker'));
@@ -51,22 +54,31 @@ class qtype_ddmarker_edit_form extends qtype_ddtoimage_edit_form_base {
         $mform->addHelpButton('drops[0]', 'dropzones', 'qtype_ddmarker');
     }
 
+    /*
+     * идет вызов функций, определенных в yui (yahoo! ui) модуле
+     * */
     public function js_call() {
         global $PAGE;
         $maxsizes = new stdClass();
-        $maxsizes->bgimage = new stdClass();
-        $maxsizes->bgimage->width = QTYPE_DDMARKER_BGIMAGE_MAXWIDTH;
+        //$maxsizes->bgimage = new stdClass();
+        $maxsizes->bgimage->width = QTYPE_DDMARKER_BGIMAGE_MAXWIDTH;//сделать это размерами экрана и как константы тоже наверх
         $maxsizes->bgimage->height = QTYPE_DDMARKER_BGIMAGE_MAXHEIGHT;
 
         $params = array('maxsizes' => $maxsizes,
                         'topnode' => 'fieldset#id_previewareaheader');
 
-        $PAGE->requires->yui_module('moodle-qtype_ddmarker-form',
-                                        'M.qtype_ddmarker.init_form',
+        /*
+         * вызов модуля: (название, "публичная" (доступная, объявлена в return-е) функция и параметры)
+         * */
+        $PAGE->requires->yui_module('moodle-qtype_stonesgame-form',
+                                        'M.qtype_stonesgame.init_form',
                                         array($params));
     }
 
-
+    /*
+     * добавляются элементы на форму, элементы - изначально пхпшные, но переписанные мудлом
+     *
+     * */
     protected function definition_draggable_items($mform, $itemrepeatsatstart) {
         $mform->addElement('header', 'draggableitemheader',
                                 get_string('markers', 'qtype_ddmarker'));
@@ -154,6 +166,12 @@ class qtype_ddmarker_edit_form extends qtype_ddtoimage_edit_form_base {
         return array($repeated, $repeatedoptions);
     }
 
+
+    /*
+     * по идее должна настраивать значения до их подачи преподавателю на форму
+     * (но есть вероятность, что используется после того, как пользователь ввел данные,
+     * т е перед подачей формы в метод set_data...хз)
+     * */
     public function data_preprocessing($question) {
 
         $question = parent::data_preprocessing($question);
@@ -265,35 +283,5 @@ class qtype_ddmarker_edit_form extends qtype_ddtoimage_edit_form_base {
             }
         }
         return $errors;
-    }
-
-    /**
-     * Gets the width and height of a draft image.
-     *
-     * @param int $draftitemid ID of the draft image
-     * @return array Return array of the width and height of the draft image.
-     */
-    public function get_image_size_in_draft_area($draftitemid) {
-        global $USER;
-        $usercontext = context_user::instance($USER->id);
-        $fs = get_file_storage();
-        $draftfiles = $fs->get_area_files($usercontext->id, 'user', 'draft', $draftitemid, 'id');
-        if ($draftfiles) {
-            foreach ($draftfiles as $file) {
-                if ($file->is_directory()) {
-                    continue;
-                }
-                
-                
-                
-                
-                // Just return the data for the first good file, there should only be one.
-                $imageinfo = $file->get_imageinfo();
-                $width    = $imageinfo['width'];
-                $height   = $imageinfo['height'];
-                return array($width, $height);
-            }
-        }
-        return null;
     }
 }

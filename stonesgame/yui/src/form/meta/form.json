@@ -1,0 +1,10 @@
+{
+  "moodle-qtype_stonesgame-form": {
+    "requires": [
+      "moodle-qtype_stonesgame-stonesgame",
+      "form_filepicker",
+      "graphics",
+      "escape"
+    ]
+  }
+}
