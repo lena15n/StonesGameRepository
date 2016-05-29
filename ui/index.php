@@ -44,7 +44,8 @@
 ?>
 
 
-    <script type="application/javascript">
+
+<script type="application/javascript">
         $("#buttonAdd").click(addElementAcc);
 
         function addElementAcc() {
@@ -52,20 +53,111 @@
         }
 
 
-    </script>
+
+
+        var nodes = null;
+        var edges = null;
+        var network = null;
+        
+        function destroy() {
+            if (network !== null) {
+                network.destroy();
+                network = null;
+            }
+        }
+
+        function draw() {
+            destroy();
+            nodes = [];
+            edges = [];
+            var connectionCount = [];
+
+            // randomly create some nodes and edges
+            for (var i = 0; i < 15; i++) {
+                nodes.push({id: i, label: String(i)});
+            }
+            edges.push({from: 0, to: 1});
+            edges.push({from: 0, to: 6});
+            edges.push({from: 0, to: 13});
+            edges.push({from: 0, to: 11});
+            edges.push({from: 1, to: 2});
+            edges.push({from: 2, to: 3});
+            edges.push({from: 2, to: 4});
+            edges.push({from: 3, to: 5});
+            edges.push({from: 1, to: 10});
+            edges.push({from: 1, to: 7});
+            edges.push({from: 2, to: 8});
+            edges.push({from: 2, to: 9});
+            edges.push({from: 3, to: 14});
+            edges.push({from: 1, to: 12});
+            nodes[0]["level"] = 0;
+            nodes[1]["level"] = 1;
+            nodes[2]["level"] = 3;
+            nodes[3]["level"] = 4;
+            nodes[4]["level"] = 4;
+            nodes[5]["level"] = 5;
+            nodes[6]["level"] = 1;
+            nodes[7]["level"] = 2;
+            nodes[8]["level"] = 4;
+            nodes[9]["level"] = 4;
+            nodes[10]["level"] = 2;
+            nodes[11]["level"] = 1;
+            nodes[12]["level"] = 2;
+            nodes[13]["level"] = 1;
+            nodes[14]["level"] = 5;
+
+
+            // create a network
+            var container = document.getElementById('tree');
+            var data = {
+                nodes: nodes,
+                edges: edges
+            };
+
+            var options = {
+                edges: {
+                    smooth: {
+                        type: 'cubicBezier',
+                        forceDirection: 'horisontal',
+                        roundness: 0.4
+                    }
+                },
+                layout: {
+                    hierarchical: {
+                        direction: 'LR'
+                    }
+                },
+                physics:false
+            };
+            network = new vis.Network(container, data, options);
+
+            // add event listeners
+            network.on('select', function (params) {
+                document.getElementById('selection').innerHTML = 'Selection: ' + params.nodes;
+            });
+
+        }
+
+    $(document).ready(function () {
+        draw();
+    });
+
+</script>
+
+
+
 </head>
 <body>
 
-<div id="outerbl" style="position: absolute; width: 800px; left: 20%; background-color: #0d9ffe;">
-fff
+<div id="outerbl" style="position: absolute; width: 850px; left: 20%; border: solid; border-color: #f79646">
+<p class="maintext"><i>Текст задания C3</i></p>
 
 <div id="question" style="width: 100%; height: 100%;">
     <div id="tree" class="tree">
-
-
-
     </div>
 
+    <p id="selection" class="maintext"></p>
+    
     <div id="buttons" class="right">
         <button id="buttonAdd" class="main"><?php echo get_string('jsadd','qtype_stonesdebug'); ?></button>
         <button id="buttonEdit" class="main"><?php echo get_string('jsedit','qtype_stonesdebug'); ?></button>
