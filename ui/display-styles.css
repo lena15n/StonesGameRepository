@@ -1,0 +1,29 @@
+div.right{
+    right: 20px;
+    top:20px;
+    position:absolute;
+    width:180px;
+    align-content: center;
+    text-align: center;
+}
+
+div.tree{
+    background-color: #9d9d9d;
+}
+
+.main {
+    width: 100%;
+    height: 40px;
+    margin: 2px;
+    font-size: smaller;
+
+}
+
+.main:hover {
+    width: 100%;
+    height: 40px;
+    margin: 2px;
+    font-size: smaller;
+    background-color: rgba(134, 213, 248, 0.21);
+}
+
