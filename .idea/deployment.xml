@@ -2,10 +2,24 @@
 <project version="4">
   <component name="PublishConfigData" serverName="apacheServer">
     <serverData>
+      <paths name="apache-servv">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="apacheServer">
         <serverdata>
           <mappings>
             <mapping deploy="\" local="$PROJECT_DIR$/stonesgame" web="/index.php" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="moodle19_project">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

@@ -2,15 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a48f68f5-dc88-4e41-a394-f1ee05325e4f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/img/network/acceptDeleteIcon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/img/network/addNodeIcon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/img/network/backIcon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/img/network/connectIcon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/img/network/cross.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/img/network/cross2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/img/network/deleteIcon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/img/network/downArrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/img/network/editIcon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/img/network/leftArrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/img/network/minus.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/img/network/plus.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/img/network/rightArrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/img/network/upArrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/img/network/zoomExtends.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/img/timeline/delete.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/data/largeHierarchicalDataset.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/vis-demos/hierarchicalLayout.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/vis-demos/hierarchicalLayoutMethods.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/vis-demos/hierarchicalLayoutUserdefined.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/vis-demos/hierarchicalLayoutWithoutPhysics.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/vis-demos/randomSeed.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/vis.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/vis.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stonesgame/edit_stonesgame_form.php" afterPath="$PROJECT_DIR$/stonesgame/edit_stonesgame_form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stonesgame/index.php" afterPath="$PROJECT_DIR$/stonesgame/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stonesgame/yui/src/form/build.json" afterPath="$PROJECT_DIR$/stonesgame/yui/src/form/build.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stonesgame/question.php" afterPath="$PROJECT_DIR$/stonesgame/question.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stonesgame/questiontype.php" afterPath="$PROJECT_DIR$/stonesgame/questiontype.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stonesgame/yui/src/form/js/form.js" afterPath="$PROJECT_DIR$/stonesgame/yui/src/form/js/form.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stonesgame/yui/src/form/meta/form.json" afterPath="$PROJECT_DIR$/stonesgame/yui/src/form/meta/form.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stonesgame/yui/src/stonesgame/build.json" afterPath="$PROJECT_DIR$/stonesgame/yui/src/stonesgame/build.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stonesgame/yui/src/stonesgame/js/stonesgame.js" afterPath="$PROJECT_DIR$/stonesgame/yui/src/stonesgame/js/stonesgame.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stonesgame/yui/src/stonesgame/meta/stonegame.json" afterPath="$PROJECT_DIR$/stonesgame/yui/src/stonesgame/meta/stonegame.json" />
     </list>
     <ignored path="StonesGameRepository.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,11 +57,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="edit_stonesgame_form.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/stonesgame/edit_stonesgame_form.php">
+      <file leaf-file-name="question.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/stonesgame/question.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="84" column="32" selection-start-line="84" selection-start-column="32" selection-end-line="84" selection-end-column="32" />
+            <state relative-caret-position="527">
+              <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -46,8 +70,8 @@
       <file leaf-file-name="form.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stonesgame/yui/src/form/js/form.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="448" column="2" selection-start-line="448" selection-start-column="2" selection-end-line="448" selection-end-column="2" />
+            <state relative-caret-position="153">
+              <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -56,11 +80,81 @@
       <file leaf-file-name="stonesgame.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stonesgame/yui/src/stonesgame/js/stonesgame.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="352" column="42" selection-start-line="352" selection-start-column="42" selection-end-line="352" selection-end-column="42" />
+            <state relative-caret-position="270">
+              <caret line="593" column="9" selection-start-line="593" selection-start-column="9" selection-end-line="593" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ui/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="19" column="70" selection-start-line="19" selection-start-column="70" selection-end-line="19" selection-end-column="70" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#6#86#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="randomSeed.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ui/vis-folder/vis-demos/randomSeed.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hierarchicalLayoutUserdefined.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ui/vis-folder/vis-demos/hierarchicalLayoutUserdefined.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hierarchicalLayoutWithoutPhysics.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ui/vis-folder/vis-demos/hierarchicalLayoutWithoutPhysics.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-153">
+              <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ui/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="39" selection-start-line="0" selection-start-column="39" selection-end-line="0" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="largeHierarchicalDataset.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ui/vis-folder/data/largeHierarchicalDataset.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -89,7 +183,6 @@
         <option value="$PROJECT_DIR$/stonesgame/README.md" />
         <option value="$PROJECT_DIR$/stonesgame/lib.php" />
         <option value="$PROJECT_DIR$/stonesgame/lang/en/qtype_stonesgame.php" />
-        <option value="$PROJECT_DIR$/stonesgame/questiontype.php" />
         <option value="$PROJECT_DIR$/stonesgame/renderer.php" />
         <option value="$PROJECT_DIR$/stonesgame/yui/amd/algorithm.js" />
         <option value="$PROJECT_DIR$/stonesgame/version.php" />
@@ -97,18 +190,24 @@
         <option value="$PROJECT_DIR$/stonesgame/yui/build/moodle-qtype_stonesgame-algorithm/moodle-qtype_stonesgame-algorithm-min.js" />
         <option value="$PROJECT_DIR$/stonesgame/db/install.xml" />
         <option value="$PROJECT_DIR$/stonesgame/db/upgrade.php" />
-        <option value="$PROJECT_DIR$/stonesgame/question.php" />
         <option value="$PROJECT_DIR$/stonesgame/index.php" />
         <option value="$USER_HOME$/Dropbox/4_курс_2_семестр/ДИПЛОМ/реализация/moodle/коды страниц/ddmarker/edit_form.html" />
         <option value="$USER_HOME$/Dropbox/4_курс_2_семестр/ДИПЛОМ/реализация/moodle/коды страниц/ddmarker/attempt php - решение задания.html" />
         <option value="$USER_HOME$/Dropbox/4_курс_2_семестр/ДИПЛОМ/реализация/moodle/коды страниц/ddmarker/школьнику видно решение и  результат .html" />
         <option value="$PROJECT_DIR$/stonesgame/yui/src/form/build.json" />
         <option value="$PROJECT_DIR$/stonesgame/yui/src/form/meta/form.json" />
-        <option value="$PROJECT_DIR$/stonesgame/yui/src/form/js/form.js" />
         <option value="$PROJECT_DIR$/stonesgame/yui/src/stonesgame/build.json" />
         <option value="$PROJECT_DIR$/stonesgame/yui/src/stonesgame/meta/stonegame.json" />
-        <option value="$PROJECT_DIR$/stonesgame/yui/src/stonesgame/js/stonesgame.js" />
         <option value="$PROJECT_DIR$/stonesgame/edit_stonesgame_form.php" />
+        <option value="$PROJECT_DIR$/stonesgame/question.php" />
+        <option value="$PROJECT_DIR$/stonesgame/questiontype.php" />
+        <option value="$PROJECT_DIR$/stonesgame/yui/src/form/js/form.js" />
+        <option value="$PROJECT_DIR$/stonesgame/yui/src/stonesgame/js/stonesgame.js" />
+        <option value="$PROJECT_DIR$/example-ui/page.php" />
+        <option value="$PROJECT_DIR$/example-ui/vis-folder/vis-demos/hierarchicalLayoutUserdefined.html" />
+        <option value="$PROJECT_DIR$/ui/vis-folder/vis-demos/hierarchicalLayoutWithoutPhysics.html" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/ui/README.md" />
       </list>
     </option>
   </component>
@@ -162,8 +261,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -179,6 +276,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="StonesGameRepository" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StonesGameRepository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StonesGameRepository" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -298,6 +409,17 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -310,17 +432,23 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$USER_HOME$/Dropbox/4_курс_2_семестр/ДИПЛОМ/реализация/moodle/коды страниц/ddmarker/школьнику видно решение и  результат .html" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Program Files\Apache24\htdocs\ok\StonesGameRepository\ui" />
+      <recent name="C:\Program Files\Apache24\htdocs\ok\StonesGameRepository\ui\vis-folder\data" />
+      <recent name="C:\Program Files\Apache24\htdocs\ok\StonesGameRepository\example-ui\vis-folder" />
+      <recent name="C:\Program Files\Apache24\htdocs\ok\StonesGameRepository\example-ui\vis-demos" />
+      <recent name="C:\Users\Lena\Documents\GitHub Projects\StonesGameRepository\stonesgame\db" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Program Files\Apache24\htdocs\ok\StonesGameRepository\example-ui\vis-folder" />
       <recent name="C:\Users\Lena\Documents\GitHub Projects\StonesGameRepository\stonesgame\yui\build\moodle-qtype_stonesgame-form" />
       <recent name="C:\Users\Lena\Documents\GitHub Projects\StonesGameRepository\stonesgame\yui\src\form\js" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Lena\Documents\GitHub Projects\StonesGameRepository\stonesgame\db" />
-    </key>
   </component>
-  <component name="RunManager" selected="PHP Web Application.on server">
+  <component name="RunManager" selected="PHP Web Application.ui-js-php">
     <configuration default="false" name="edit_stonesgame_form.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost/index.php/stonesgame/edit_stonesgame_form.php">
       <method />
     </configuration>
@@ -356,9 +484,6 @@
     <configuration default="true" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug">
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="49758276-96c5-4137-8d67-347713e2d24c" server_name="apacheServer">
-      <method />
-    </configuration>
     <configuration default="true" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application">
       <method />
     </configuration>
@@ -389,21 +514,25 @@
     <configuration default="false" name="php srcipt" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/stonesgame/index.php">
       <method />
     </configuration>
+    <configuration default="false" name="ui-js-php" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="localhost" start_url="/ok/stonesgamerepository/ui/">
+      <method />
+    </configuration>
     <configuration default="false" name="on server" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="localhost" start_url="/ok/stonesgamerepository/stonesgame/">
       <method />
     </configuration>
     <configuration default="false" name="serv" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="serverr" start_url="/ok/">
       <method />
     </configuration>
-    <list size="8">
-      <item index="0" class="java.lang.String" itemvalue="PHP Built-in Web Server.debugapache" />
-      <item index="1" class="java.lang.String" itemvalue="PHP Remote Debug.Unnamed" />
-      <item index="2" class="java.lang.String" itemvalue="PHP Script.php srcipt" />
-      <item index="3" class="java.lang.String" itemvalue="PHP Web Application.on server" />
-      <item index="4" class="java.lang.String" itemvalue="PHP Web Application.serv" />
-      <item index="5" class="java.lang.String" itemvalue="JavaScript Debug.edit_stonesgame_form.php" />
-      <item index="6" class="java.lang.String" itemvalue="JavaScript Debug.renderer.php" />
-      <item index="7" class="java.lang.String" itemvalue="PHP Script.edit_stonesgame_form.php" />
+    <list size="9">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.edit_stonesgame_form.php" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.renderer.php" />
+      <item index="2" class="java.lang.String" itemvalue="PHP Built-in Web Server.debugapache" />
+      <item index="3" class="java.lang.String" itemvalue="PHP Remote Debug.Unnamed" />
+      <item index="4" class="java.lang.String" itemvalue="PHP Script.php srcipt" />
+      <item index="5" class="java.lang.String" itemvalue="PHP Script.edit_stonesgame_form.php" />
+      <item index="6" class="java.lang.String" itemvalue="PHP Web Application.ui-js-php" />
+      <item index="7" class="java.lang.String" itemvalue="PHP Web Application.on server" />
+      <item index="8" class="java.lang.String" itemvalue="PHP Web Application.serv" />
     </list>
     <recent_temporary>
       <list size="3">
@@ -439,7 +568,15 @@
       <workItem from="1463655104845" duration="336000" />
       <workItem from="1463655455784" duration="2977000" />
       <workItem from="1463773009968" duration="2958000" />
-      <workItem from="1463835492618" duration="9443000" />
+      <workItem from="1463835492618" duration="10036000" />
+      <workItem from="1463969986703" duration="1848000" />
+      <workItem from="1464069423932" duration="8432000" />
+      <workItem from="1464117660489" duration="774000" />
+      <workItem from="1464164889977" duration="2743000" />
+      <workItem from="1464200798837" duration="2892000" />
+      <workItem from="1464216251759" duration="496000" />
+      <workItem from="1464216762789" duration="15000" />
+      <workItem from="1464544852268" duration="1404000" />
     </task>
     <servers />
   </component>
@@ -455,21 +592,22 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59018000" />
+    <option name="totallyTimeSpent" value="78215000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23903178" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26928896" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48976108" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13287905" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15870307" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1890971" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40614334" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1890971" sideWeight="0.4969743" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -477,11 +615,10 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40614334" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13139932" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1890971" sideWeight="0.4969743" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -498,7 +635,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -507,6 +644,21 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/stonesgame/edit_stonesgame_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stonesgame/lib.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/stonesgame/version.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -546,7 +698,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -617,80 +768,7 @@
     <entry file="file://$PROJECT_DIR$/stonesgame/db/install.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stonesgame/yui/src/form/js/form.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stonesgame/lang/en/qtype_stonesgame.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stonesgame/edit_stonesgame_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stonesgame/lib.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stonesgame/version.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stonesgame/questiontype.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stonesgame/question.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="32" column="2" selection-start-line="32" selection-start-column="2" selection-end-line="32" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stonesgame/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stonesgame/renderer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stonesgame/db/install.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -706,24 +784,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/stonesgame/lib.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stonesgame/questiontype.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -752,7 +816,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="24" column="102" selection-start-line="24" selection-start-column="102" selection-end-line="24" selection-end-column="102" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -768,15 +831,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="4" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stonesgame/question.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="39" column="3" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -784,7 +838,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="23" column="71" selection-start-line="23" selection-start-column="71" selection-end-line="23" selection-end-column="71" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -792,7 +845,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -800,7 +852,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -808,7 +859,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -816,7 +866,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -824,7 +873,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -832,15 +880,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stonesgame/yui/src/form/js/form.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="448" column="2" selection-start-line="448" selection-start-column="2" selection-end-line="448" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -848,7 +887,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -856,37 +894,119 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5661">
           <caret line="1406" column="147" selection-start-line="1406" selection-start-column="147" selection-end-line="1406" selection-end-column="147" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#section#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#object#0;n#div#0;n#noscript#0;n#div#0;n#div#1;n#div#3;n#div#0;n#fieldset#0;n#form#0;n#div#0;n#section#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#object#0;n#div#0;n#noscript#0;n#div#0;n#div#1;n#div#5;n#div#0;n#fieldset#0;n#form#0;n#div#0;n#section#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#2;n#div#0;n#fieldset#1;n#form#0;n#div#0;n#section#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#1;n#div#2;n#div#0;n#fieldset#1;n#form#0;n#div#0;n#section#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#object#0;n#div#0;n#noscript#0;n#div#1;n#div#2;n#div#0;n#fieldset#1;n#form#0;n#div#0;n#section#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#object#0;n#div#0;n#noscript#0;n#div#0;n#div#1;n#div#0;n#div#0;n#fieldset#4;n#form#0;n#div#0;n#section#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#object#0;n#div#0;n#noscript#0;n#div#0;n#div#1;n#div#1;n#div#0;n#fieldset#4;n#form#0;n#div#0;n#section#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#object#0;n#div#0;n#noscript#0;n#div#0;n#div#1;n#div#3;n#div#0;n#fieldset#4;n#form#0;n#div#0;n#section#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#object#0;n#div#0;n#noscript#0;n#div#0;n#div#1;n#div#1;n#div#0;n#fieldset#5;n#form#0;n#div#0;n#section#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#object#0;n#div#0;n#noscript#0;n#div#0;n#div#1;n#div#5;n#div#0;n#fieldset#5;n#form#0;n#div#0;n#section#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1463840596892" expanded="true" signature="204334:204352" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stonesgame/yui/src/stonesgame/js/stonesgame.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="352" column="42" selection-start-line="352" selection-start-column="42" selection-end-line="352" selection-end-column="42" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/stonesgame/edit_stonesgame_form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="84" column="32" selection-start-line="84" selection-start-column="32" selection-end-line="84" selection-end-column="32" />
+        <state relative-caret-position="612">
+          <caret line="49" column="63" selection-start-line="49" selection-start-column="63" selection-end-line="49" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stonesgame/questiontype.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1785">
+          <caret line="118" column="46" selection-start-line="118" selection-start-column="46" selection-end-line="118" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stonesgame/question.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stonesgame/yui/src/form/js/form.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stonesgame/yui/src/stonesgame/js/stonesgame.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="593" column="9" selection-start-line="593" selection-start-column="9" selection-end-line="593" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/vis-folder/vis-demos/randomSeed.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/vis-folder/vis.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5151">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/vis-folder/vis.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="19" column="70" selection-start-line="19" selection-start-column="70" selection-end-line="19" selection-end-column="70" />
+          <folding>
+            <element signature="e#6#86#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/vis-folder/vis-demos/hierarchicalLayoutUserdefined.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/vis-folder/data/largeHierarchicalDataset.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/vis-folder/vis-demos/hierarchicalLayoutWithoutPhysics.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="39" selection-start-line="0" selection-start-column="39" selection-end-line="0" selection-end-column="39" />
           <folding />
         </state>
       </provider>

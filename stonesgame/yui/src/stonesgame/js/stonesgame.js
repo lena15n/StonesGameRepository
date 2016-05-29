@@ -13,14 +13,14 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-var DDMARKERDDNAME = 'moodle-qtype_ddmarker-dd';
-var DDMARKER_DD = function() {
-    DDMARKER_DD.superclass.constructor.apply(this, arguments);
+var STONESGAMENAME = 'moodle-qtype_ddmarker-dd';
+var STONESGAME = function() {
+    STONESGAME.superclass.constructor.apply(this, arguments);
 };
 /**
  * This is the base class for the question rendering and question editing form code.
  */
-Y.extend(DDMARKER_DD, Y.Base, {
+Y.extend(STONESGAME, Y.Base, {
     doc : null,
     polltimer : null,
     afterimageloaddone : false,
@@ -290,7 +290,7 @@ Y.extend(DDMARKER_DD, Y.Base, {
         coords[1] <= this.doc.bg_img().get('height'));
     }
 }, {
-    NAME : DDMARKERDDNAME,
+    NAME : STONESGAMENAME,
     ATTRS : {
         drops : {value : null},
         readonly : {value : false},
@@ -298,16 +298,16 @@ Y.extend(DDMARKER_DD, Y.Base, {
     }
 });
 M.qtype_ddmarker = M.qtype_ddmarker || {};
-M.qtype_ddmarker.dd_base_class = DDMARKER_DD;
+M.qtype_ddmarker.dd_base_class = STONESGAME;
 
 var DDMARKERQUESTIONNAME = 'ddmarker_question';
-var DDMARKER_QUESTION = function() {
-    DDMARKER_QUESTION.superclass.constructor.apply(this, arguments);
+var STONESGAME_QUESTION = function() {
+    STONESGAME_QUESTION.superclass.constructor.apply(this, arguments);
 };
 /**
  * This is the code for question rendering.
  */
-Y.extend(DDMARKER_QUESTION, M.qtype_ddmarker.dd_base_class, {
+Y.extend(STONESGAME_QUESTION, M.qtype_ddmarker.dd_base_class, {
     touchscrolldisable: null,
     pendingid: '',
     initializer : function() {
@@ -599,6 +599,6 @@ Y.Event.define('dragchange', {
             this, notifier);
     }
 });
-M.qtype_ddmarker.init_question = function(config) {
-    return new DDMARKER_QUESTION(config);
+M.qtype_stonesgame.init_question = function(config) {
+    return new STONESGAME_QUESTION(config);
 };
