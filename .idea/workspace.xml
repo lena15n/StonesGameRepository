@@ -2,39 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a48f68f5-dc88-4e41-a394-f1ee05325e4f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/img/network/acceptDeleteIcon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/img/network/addNodeIcon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/img/network/backIcon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/img/network/connectIcon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/img/network/cross.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/img/network/cross2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/img/network/deleteIcon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/img/network/downArrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/img/network/editIcon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/img/network/leftArrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/img/network/minus.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/img/network/plus.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/img/network/rightArrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/img/network/upArrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/img/network/zoomExtends.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/img/timeline/delete.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/data/largeHierarchicalDataset.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/vis-demos/hierarchicalLayout.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/vis-demos/hierarchicalLayoutMethods.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/vis-demos/hierarchicalLayoutUserdefined.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/vis-demos/hierarchicalLayoutWithoutPhysics.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/vis-demos/randomSeed.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/vis.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/vis-folder/vis.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stonesgame/question.php" afterPath="$PROJECT_DIR$/stonesgame/question.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stonesgame/questiontype.php" afterPath="$PROJECT_DIR$/stonesgame/questiontype.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stonesgame/yui/src/form/js/form.js" afterPath="$PROJECT_DIR$/stonesgame/yui/src/form/js/form.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stonesgame/yui/src/stonesgame/js/stonesgame.js" afterPath="$PROJECT_DIR$/stonesgame/yui/src/stonesgame/js/stonesgame.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/index.php" afterPath="$PROJECT_DIR$/ui/index.php" />
     </list>
     <ignored path="StonesGameRepository.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -87,13 +55,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ui/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="19" column="70" selection-start-line="19" selection-start-column="70" selection-end-line="19" selection-end-column="70" />
+            <state relative-caret-position="255">
+              <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
               <folding>
                 <element signature="e#6#86#0#PHP" expanded="true" />
+                <marker date="1464546638962" expanded="true" signature="659:673" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -134,16 +103,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-153">
               <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ui/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="39" selection-start-line="0" selection-start-column="39" selection-end-line="0" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -208,6 +167,7 @@
         <option value="$PROJECT_DIR$/ui/vis-folder/vis-demos/hierarchicalLayoutWithoutPhysics.html" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/ui/README.md" />
+        <option value="$PROJECT_DIR$/ui/index.php" />
       </list>
     </option>
   </component>
@@ -576,7 +536,7 @@
       <workItem from="1464200798837" duration="2892000" />
       <workItem from="1464216251759" duration="496000" />
       <workItem from="1464216762789" duration="15000" />
-      <workItem from="1464544852268" duration="1404000" />
+      <workItem from="1464544852268" duration="1777000" />
     </task>
     <servers />
   </component>
@@ -592,7 +552,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78215000" />
+    <option name="totallyTimeSpent" value="78588000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -961,16 +921,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ui/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="19" column="70" selection-start-line="19" selection-start-column="70" selection-end-line="19" selection-end-column="70" />
-          <folding>
-            <element signature="e#6#86#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ui/vis-folder/vis-demos/hierarchicalLayoutUserdefined.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -987,14 +937,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ui/vis-folder/vis-demos/hierarchicalLayoutWithoutPhysics.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1005,9 +947,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ui/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="39" selection-start-line="0" selection-start-column="39" selection-end-line="0" selection-end-column="39" />
+        <state relative-caret-position="102">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/vis-folder/vis-demos/hierarchicalLayoutWithoutPhysics.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+          <folding>
+            <element signature="e#6#86#0#PHP" expanded="true" />
+            <marker date="1464546638962" expanded="true" signature="659:673" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

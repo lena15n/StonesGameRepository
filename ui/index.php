@@ -17,13 +17,21 @@
 <head>
     <title>UB Hotspots</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <link type="text/css" rel="stylesheet" href="css/jquery.layout.css"/>
-    <link type="text/css" rel="stylesheet" href="css/smoothness/jquery-ui-1.8.16.custom.css"/>
-    <script type="text/javascript" src="jquery.js"></script>
+    <link type="text/css" rel="stylesheet" href="vis-folder/vis.css"/>
+    <script type="text/javascript" src="vis-folder/vis.js"></script>
 
 
+    <?php
+    $var = 10;
+    if ($var == 1) {
+        echo '<b>Привет, Витек!</b>';
+    }
+    else
+    {
+        echo '<b>Привет, Евгений!</b>';
+    }
+?>
 
-    
 </head>
 <body>
 
