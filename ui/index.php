@@ -7,8 +7,6 @@
  */
 
 
-
-
 ?>
 
 
@@ -25,10 +23,11 @@
     <?php
 
 
-    function get_string($identifier, $langfile){//взять аналог из мудла
+    function get_string($identifier, $langfile)
+    {//взять аналог из мудла
         //$langfile = "qtype_stonesgame.php";
         $string = array();
-        include ($langfile.".php");
+        include($langfile . ".php");
         $strings[$langfile] = $string;
         $string = &$strings[$langfile];
 
@@ -40,12 +39,10 @@
     }
 
 
-
-?>
-
+    ?>
 
 
-<script type="application/javascript">
+    <script type="application/javascript">
         $("#buttonAdd").click(addElementAcc);
 
         function addElementAcc() {
@@ -53,12 +50,10 @@
         }
 
 
-
-
         var nodes = null;
         var edges = null;
         var network = null;
-        
+
         function destroy() {
             if (network !== null) {
                 network.destroy();
@@ -127,7 +122,7 @@
                         direction: 'LR'
                     }
                 },
-                physics:false
+                physics: false
             };
             network = new vis.Network(container, data, options);
 
@@ -138,42 +133,46 @@
 
         }
 
-    $(document).ready(function () {
-        draw();
-    });
+        $(document).ready(function () {
+            draw();
+        });
 
-</script>
-
+    </script>
 
 
 </head>
 <body>
 
 <div id="outerbl" style="position: absolute; width: 850px; left: 20%; border: solid; border-color: #f79646">
-<p class="maintext"><i>Текст задания C3</i></p>
+    <p class="maintext"><i>Текст задания C3</i></p>
 
-<div id="question" style="width: 100%; height: 100%;">
-    <div id="tree" class="tree">
+    <div id="question" style="width: 100%; height: 100%;">
+        <div id="treeAndButtons" style="width: 850px; height: 400px; border: solid; border-color: #00ff26">
+            <div id="tree" class="tree">
+            </div>
+
+
+            <div id="buttons" class="right">
+                <button id="buttonAdd" class="main"><?php echo get_string('jsadd', 'qtype_stonesdebug'); ?></button>
+                <button id="buttonEdit" class="main"><?php echo get_string('jsedit', 'qtype_stonesdebug'); ?></button>
+                <button id="buttonDelete"
+                        class="main"><?php echo get_string('jsdelete', 'qtype_stonesdebug'); ?></button>
+                <button id="buttonMark" class="main"><?php echo get_string('jsmark', 'qtype_stonesdebug'); ?></button>
+                <button id="buttonEnd" class="main"><?php echo get_string('jsend', 'qtype_stonesdebug'); ?></button>
+                <button id="buttonClearAll"
+                        class="main"><?php echo get_string('jsclearall', 'qtype_stonesdebug'); ?></button>
+
+                <br><br><br>
+
+                <button id="buttonSave" class="main"><?php echo get_string('jssave', 'qtype_stonesdebug'); ?></button>
+                <a href="help/stonesgame.html" class="main"
+                   target="_blank"><?php echo get_string('jshelp', 'qtype_stonesdebug'); ?></a>
+            </div>
+
+        </div>
+        <p id="selection" class="maintext"></p>
+
     </div>
-
-    <p id="selection" class="maintext"></p>
-    
-    <div id="buttons" class="right">
-        <button id="buttonAdd" class="main"><?php echo get_string('jsadd','qtype_stonesdebug'); ?></button>
-        <button id="buttonEdit" class="main"><?php echo get_string('jsedit','qtype_stonesdebug'); ?></button>
-        <button id="buttonDelete" class="main"><?php echo get_string('jsdelete','qtype_stonesdebug'); ?></button>
-        <button id="buttonMark" class="main"><?php echo get_string('jsmark','qtype_stonesdebug'); ?></button>
-        <button id="buttonEnd" class="main"><?php echo get_string('jsend','qtype_stonesdebug'); ?></button>
-        <button id="buttonClearAll" class="main"><?php echo get_string('jsclearall','qtype_stonesdebug'); ?></button>
-
-        <br><br><br>
-
-        <button id="buttonSave" class="main"><?php echo get_string('jssave','qtype_stonesdebug'); ?></button>
-        <a href="help/stonesgame.html" class="main" target="_blank"><?php echo get_string('jshelp','qtype_stonesdebug'); ?></a>
-    </div>
-
-
-</div>
 
 </div>
 

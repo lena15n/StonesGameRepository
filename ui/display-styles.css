@@ -1,17 +1,18 @@
 div.right{
-    right: 20px;
-    top:20px;
-    position:absolute;
+    right: 40px;
+    top: -402px;
+    position:relative;
     width:180px;
     align-content: center;
     text-align: center;
+    float: right;
 }
 
 div.tree{
     width: 600px;
     height: 400px;
     border: 1px solid lightgray;
-    margin-left: 2%;
+    margin-left: 1%;
 }
 
 .main {
