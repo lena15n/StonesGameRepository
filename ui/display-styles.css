@@ -32,9 +32,9 @@ div.tree{
 }
 
 p.maintext{
-    margin-left: 2%;
-    font-family: "Meiryo UI";
-    font-size: larger;
-    font-style: italic;
+    margin-left: 0;
+    font-family: "Arial Narrow";
+    font-size: medium;
+
 }
 

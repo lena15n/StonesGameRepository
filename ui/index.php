@@ -1,11 +1,30 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Lena
- * Date: 29.05.2016
- * Time: 22:02
+
+
+
+function get_string($identifier, $langfile)
+{//взять аналог из мудла
+    //$langfile = "qtype_stonesgame.php";
+    $string = array();
+    include($langfile . ".php");
+    $strings[$langfile] = $string;
+    $string = &$strings[$langfile];
+
+    if (!isset ($string[$identifier])) {
+        return false;
+    }
+
+    return $string[$identifier];
+}
+
+//TODO: в отдельном классе .php (т к безопасность) реализовываем логику, здесь же вызываем и в функциях js рисуем вершины
+/*
+ * В js создать метод конвертации рисованого дерева в "пхп-шное" (добавляются новые поля и прочее, но само дерево - js)
+ *
  */
 
+
+$task3 = str_replace("N", "(7, 31)", get_string('jstask3', 'qtype_stonesdebug'));
 
 ?>
 
@@ -20,71 +39,14 @@
     <script type="text/javascript" src="vis-folder/vis.js"></script>
     <script type="text/javascript" src="jquery.js"></script>
 
-    <?php
-
-
-    function get_string($identifier, $langfile)
-    {//взять аналог из мудла
-        //$langfile = "qtype_stonesgame.php";
-        $string = array();
-        include($langfile . ".php");
-        $strings[$langfile] = $string;
-        $string = &$strings[$langfile];
-
-        if (!isset ($string[$identifier])) {
-            return false;
-        }
-
-        return "$string[$identifier]";
-    }
-
-    //TODO: в отдельном классе .php (т к безопасность) реализовываем логику, здесь же вызываем и в функциях js рисуем вершины
-    ?>
-
 
     <script type="application/javascript">
-/*
-        <
-        div
-        class
-        = "vis-network"
-        tabindex = "900"
-        style = "position: relative; overflow: hidden; touch-action: pan-y; -webkit-user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 100%; height: 100%;" > < canvas
-        width = "800"
-        height = "600"
-        style = "position: relative; touch-action: none; -webkit-user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 100%; height: 100%;" > < / canvas > < div
-        class
-        = "vis-manipulation"
-        style = "display: block;" > < div
-        class
-        = "vis-button vis-add"
-        style = "touch-action: pan-y; -webkit-user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);" > < div
-        class
-        = "vis-label" > Add
-        Node < / div > < /
-        div > < div
-        class
-        = "vis-separator-line" > < / div > < div
-        class
-        = "vis-button vis-connect"
-        style = "touch-action: pan-y; -webkit-user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);" > < div
-        class
-        = "vis-label" > Add
-        Edge < / div > < /
-        div > < / div > < div
-        class
-        = "vis-edit-mode"
-        style = "display: none;" > < / div > < div
-        class
-        = "vis-close"
-        style = "display: block; touch-action: pan-y; -webkit-user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);" > < / div > < /
-        div >
-*/
+
 
         function addState() {
-            //alert("вышло!!11");
-
-
+            if (tree !== null) {
+                tree.addNodeMode();
+            }
         }
 
         function editState() {
@@ -93,8 +55,12 @@
         }
 
         function deleteState() {
-
+            if (tree !== null) {
+                tree.deleteSelected();
+            }
         }
+
+
 
         function setWinStrategy() {
 
@@ -112,10 +78,38 @@
 
         }
 
+        function addNodeJs(data,callback) {
+            if (!need) {
+                need = true;
+                tree.disableEditMode();
+                return;
+            }
+            need = false;
+
+            data.label = "(7, 31)\n38";
+            data.color = "#FFFFFF";
+
+            console.log("here");
+
+            callback(data);
+            tree.disableEditMode();
+        }
+
+        function drawnTreeToPHPTree(drawntree){
+            //logic
+
+            phptree = drawntree;
+        }
+
+
+        var phptree = null;
+
 
         var nodes = null;
         var edges = null;
         var tree = null;
+
+        var need = true;
 
         function destroy() {
             if (tree !== null) {
@@ -144,6 +138,7 @@
             edges.push({from: 6, to: 7, arrows: 'to'});
             edges.push({from: 5, to: 8, arrows: 'to'});
             edges.push({from: 4, to: 9, arrows: 'to'});
+
             nodes[0]["level"] = 0;
             nodes[1]["level"] = 1;
             nodes[2]["level"] = 2;
@@ -154,7 +149,6 @@
             nodes[7]["level"] = 4;
             nodes[8]["level"] = 4;
             nodes[9]["level"] = 4;
-            
 
 
             nodes[0].label = "(7, 31)\n38";
@@ -188,10 +182,8 @@
             nodes[9].color = "#00FFFF";
             nodes[9].borderWidth = "4";
             nodes[9].color.border = "#00FF00";
-            
-            
-            
-            
+
+
             // create a tree
             var container = document.getElementById('tree');
             var data = {
@@ -203,7 +195,7 @@
                 edges: {
                     smooth: {
                         type: 'cubicBezier',
-                        forceDirection: 'horisontal',
+                        forceDirection: 'horizontal',
                         roundness: 0.4
                     }
                 },
@@ -213,18 +205,13 @@
                     }
                 },
                 manipulation: {
-                    enabled: true,
-                    initiallyActive: true,
-                    addNode: true,
-                    addEdge: true,
-                    editNode: undefined,
-                    editEdge: true,
-                    deleteNode: true,
-                    deleteEdge: true
+                    enabled: false,
+                    addNode: function (data, callback) {
+                        addNodeJs(data, callback);
+                    }
                 },
                 physics: false
             };
-
             tree = new vis.Network(container, data, options);
 
             // add event listeners
@@ -236,7 +223,6 @@
 
         $(document).ready(function () {
             draw();
-
 
             $("#buttonAdd").click(addState);
 
@@ -250,7 +236,7 @@
 <body>
 
 <div id="outerbl" style="position: absolute; width: 850px; left: 20%;  ">
-    <p class="maintext"><i>Текст задания C3</i></p>
+    <p class="maintext"><?php echo $task3?></p>
 
     <div id="question" style="width: 100%; height: 100%;">
         <div id="treeAndButtons" style="width: 850px; height: 400px;  ">
@@ -276,12 +262,28 @@
             </div>
 
         </div>
-        <p id="selection" class="maintext"></p>
+        
+        <div>
+            <p id="selection" class="maintext"></p>
+
+            <table>
+            <tr><td><p class="maintext"><?php echo get_string('jsquestionwinner', 'qtype_stonesdebug')?></p></td>
+
+            <td><select name = "winnernames[]" >
+                <option value = "<?php echo get_string('jspet', 'qtype_stonesdebug')?>"><?php echo get_string('jspet', 'qtype_stonesdebug')?></option>
+                <option value = "<?php echo get_string('jsvan', 'qtype_stonesdebug')?>"><?php echo get_string('jsvan', 'qtype_stonesdebug')?></option>
+            </select></td></tr>
+
+             <tr><td><p class="maintext"><?php echo get_string('jsquestionmaxcount', 'qtype_stonesdebug')?></p></td>
+                 <td><p><input name="digit" required pattern="#[0-9]{2}" style="width: 50px"></p></p></td>
+             </tr>
+            </table>
+            
+        </div>
+        
 
     </div>
-
 </div>
-
 
 </body>
 </html>
