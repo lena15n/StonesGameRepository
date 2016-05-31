@@ -1,7 +1,6 @@
 <?php
 
 
-
 function get_string($identifier, $langfile)
 {//взять аналог из мудла
     //$langfile = "qtype_stonesgame.php";
@@ -23,8 +22,22 @@ function get_string($identifier, $langfile)
  *
  */
 
+$position = "(7, 31)";
 
-$task3 = str_replace("N", "(7, 31)", get_string('jstask3', 'qtype_stonesdebug'));
+function get_position_summ($position_str)
+{
+    $spoils = preg_split("/[(\s, )]+/", $position_str, null, PREG_SPLIT_NO_EMPTY);
+    $summ = 0;
+
+    foreach ($spoils as $spoil) {
+        $summ += $spoil;
+    }
+
+    return $summ;
+}
+
+$summ = get_position_summ($position);
+$task3 = str_replace("N", $position, get_string('jstask3', 'qtype_stonesdebug'));
 
 ?>
 
@@ -41,7 +54,14 @@ $task3 = str_replace("N", "(7, 31)", get_string('jstask3', 'qtype_stonesdebug'))
 
 
     <script type="application/javascript">
+        var phptree = null;
 
+
+        var nodes = null;
+        var edges = null;
+        var tree = null;
+
+        var need = true;
 
         function addState() {
             if (tree !== null) {
@@ -51,15 +71,25 @@ $task3 = str_replace("N", "(7, 31)", get_string('jstask3', 'qtype_stonesdebug'))
 
         function editState() {
 
-
+            //edges.
         }
 
         function deleteState() {
             if (tree !== null) {
+                var id = tree.getSelectedNodes();
+                var nextNodes = nodes.getConnectedNodes(id);
+
+                nextNodes.forEach(function (node, i, nextNodes) {
+                    if (node.id == id) {
+                        nodes.delete(node);
+                        //currEdges.push(edge);
+                    }
+                });
+
+
                 tree.deleteSelected();
             }
         }
-
 
 
         function setWinStrategy() {
@@ -71,51 +101,100 @@ $task3 = str_replace("N", "(7, 31)", get_string('jstask3', 'qtype_stonesdebug'))
         }
 
         function clearAll() {
-
+           draw1();
         }
 
         function saveAll() {
 
         }
 
-        function addNodeJs(data,callback) {
-            if (!need) {
-                need = true;
-                tree.disableEditMode();
-                return;
-            }
-            need = false;
 
-            data.label = "(7, 31)\n38";
-            data.color = "#FFFFFF";
 
-            console.log("here");
+        function addNodeJs(data, callback) {
+            /* if (!need) {
+             need = true;
+             tree.disableEditMode();
+             return;
+             }
+             need = false;
 
-            callback(data);
-            tree.disableEditMode();
+             data.label = "(7, 31)\n38";
+             data.color = "#FFFFFF";
+
+             console.log("here");
+
+             callback(data);
+             tree.disableEditMode();*/
         }
 
-        function drawnTreeToPHPTree(drawntree){
+        function addEdgeJs(id) {
+            edges.add({id, from, to});
+        }
+
+        function drawnTreeToPHPTree(drawntree) {
             //logic
 
             phptree = drawntree;
         }
 
 
-        var phptree = null;
-
-
-        var nodes = null;
-        var edges = null;
-        var tree = null;
-
-        var need = true;
-
         function destroy() {
             if (tree !== null) {
                 tree.destroy();
                 tree = null;
             }
+        }
+
+        function draw1() {
+            destroy();
+            nodes = [];
+            edges = [];
+            var connectionCount = [];
+
+
+            nodes.push({id: 0, label: "<?php echo $position;?>\n<?php echo $summ; ?>"});
+            nodes[0]["level"] = 0;
+            nodes[0].color = "#FFFFFF";
+            nodes[0].shape = "box";
+
+            // create a tree
+            var container = document.getElementById('tree');
+            var data = {
+                nodes: nodes,
+                edges: edges
+            };
+
+
+
+            var options = {
+                edges: {
+                    smooth: {
+                        type: 'cubicBezier',
+                        forceDirection: 'horizontal',
+                        roundness: 0.4
+                    }
+                },
+                layout: {
+                    hierarchical: {
+                        direction: 'LR'
+                    }
+                },
+                manipulation: {
+                    enabled: false,
+                    addNode: function (data, callback) {
+                        addNodeJs(data, callback);
+                        addEdgeJS();
+                    }
+                },
+                physics: false
+            };
+            tree = new vis.Network(container, data, options);
+
+            // add event listeners
+            tree.on('select', function (params) {
+                document.getElementById('selection').innerHTML = 'Selection: ' + params.nodes;
+            });
+
         }
 
         function draw() {
@@ -208,6 +287,7 @@ $task3 = str_replace("N", "(7, 31)", get_string('jstask3', 'qtype_stonesdebug'))
                     enabled: false,
                     addNode: function (data, callback) {
                         addNodeJs(data, callback);
+                        addEdgeJS();
                     }
                 },
                 physics: false
@@ -225,6 +305,11 @@ $task3 = str_replace("N", "(7, 31)", get_string('jstask3', 'qtype_stonesdebug'))
             draw();
 
             $("#buttonAdd").click(addState);
+            $("#buttonEdit").click(editState);
+            $("#buttonDelete").click(deleteState);
+            $("#buttonMark").click(editState);
+            $("#buttonEnd").click(editState);
+            $("#buttonClearAll").click(clearAll);
 
 
         });
@@ -236,7 +321,7 @@ $task3 = str_replace("N", "(7, 31)", get_string('jstask3', 'qtype_stonesdebug'))
 <body>
 
 <div id="outerbl" style="position: absolute; width: 850px; left: 20%;  ">
-    <p class="maintext"><?php echo $task3?></p>
+    <p class="maintext"><?php echo $task3 ?></p>
 
     <div id="question" style="width: 100%; height: 100%;">
         <div id="treeAndButtons" style="width: 850px; height: 400px;  ">
@@ -262,25 +347,30 @@ $task3 = str_replace("N", "(7, 31)", get_string('jstask3', 'qtype_stonesdebug'))
             </div>
 
         </div>
-        
+
         <div>
             <p id="selection" class="maintext"></p>
 
             <table>
-            <tr><td><p class="maintext"><?php echo get_string('jsquestionwinner', 'qtype_stonesdebug')?></p></td>
+                <tr>
+                    <td><p class="maintext"><?php echo get_string('jsquestionwinner', 'qtype_stonesdebug') ?></p></td>
 
-            <td><select name = "winnernames[]" >
-                <option value = "<?php echo get_string('jspet', 'qtype_stonesdebug')?>"><?php echo get_string('jspet', 'qtype_stonesdebug')?></option>
-                <option value = "<?php echo get_string('jsvan', 'qtype_stonesdebug')?>"><?php echo get_string('jsvan', 'qtype_stonesdebug')?></option>
-            </select></td></tr>
+                    <td><select name="winnernames[]">
+                            <option
+                                value="<?php echo get_string('jspet', 'qtype_stonesdebug') ?>"><?php echo get_string('jspet', 'qtype_stonesdebug') ?></option>
+                            <option
+                                value="<?php echo get_string('jsvan', 'qtype_stonesdebug') ?>"><?php echo get_string('jsvan', 'qtype_stonesdebug') ?></option>
+                        </select></td>
+                </tr>
 
-             <tr><td><p class="maintext"><?php echo get_string('jsquestionmaxcount', 'qtype_stonesdebug')?></p></td>
-                 <td><p><input name="digit" required pattern="#[0-9]{2}" style="width: 50px"></p></p></td>
-             </tr>
+                <tr>
+                    <td><p class="maintext"><?php echo get_string('jsquestionmaxcount', 'qtype_stonesdebug') ?></p></td>
+                    <td><p><input name="digit" required pattern="#[0-9]{2}" style="width: 50px"></p></p></td>
+                </tr>
             </table>
-            
+
         </div>
-        
+
 
     </div>
 </div>
