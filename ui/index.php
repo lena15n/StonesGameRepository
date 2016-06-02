@@ -55,7 +55,7 @@ $task3 = str_replace("N", $position, get_string('jstask3', 'qtype_stonesdebug'))
 
     <script type="application/javascript">
         var phptree = null;
-
+        var strategy = null;
 
         var nodes = null;
         var edges = null;
@@ -76,18 +76,22 @@ $task3 = str_replace("N", $position, get_string('jstask3', 'qtype_stonesdebug'))
 
         function deleteState() {
             if (tree !== null) {
-                var id = tree.getSelectedNodes();
-                var nextNodes = nodes.getConnectedNodes(id);
+                var ids = tree.getSelectedNodes();
+                var id = ids[0];
 
-                nextNodes.forEach(function (node, i, nextNodes) {
-                    if (node.id == id) {
-                        nodes.delete(node);
+                if (id != 0) {
+                    var nextNodes = tree.getConnectedNodes(id);
+
+                    nextNodes.forEach(function (node, i, nextNodes) {
+                        //if (node.id == id) {
+                       // nodes.remove({{id: id}});
                         //currEdges.push(edge);
-                    }
-                });
+                        //}
+                    });
 
 
-                tree.deleteSelected();
+                    tree.deleteSelected();
+                }
             }
         }
 
@@ -204,9 +208,10 @@ $task3 = str_replace("N", $position, get_string('jstask3', 'qtype_stonesdebug'))
             var connectionCount = [];
 
             // randomly create some nodes and edges
-            for (var i = 0; i < 10; i++) {
+            for (var i = 0; i < 25; i++) {
                 nodes.push({id: i, label: String(i)});
-            }
+            }edges.push({from: 0, to: 11, arrows: 'to'});
+            edges.push({from: 0, to: 10, arrows: 'to'});
 
             edges.push({from: 0, to: 1, arrows: 'to'});
             edges.push({from: 1, to: 2, arrows: 'to'});
@@ -218,6 +223,20 @@ $task3 = str_replace("N", $position, get_string('jstask3', 'qtype_stonesdebug'))
             edges.push({from: 5, to: 8, arrows: 'to'});
             edges.push({from: 4, to: 9, arrows: 'to'});
 
+            edges.push({from: 0, to: 12, arrows: 'to'});
+            edges.push({from: 10, to: 13, arrows: 'to'});
+            edges.push({from: 11, to: 14, arrows: 'to'});
+            edges.push({from: 12, to: 15, arrows: 'to'});
+            edges.push({from: 13, to: 16, arrows: 'to'});
+            edges.push({from: 13, to: 17, arrows: 'to'});
+            edges.push({from: 13, to: 18, arrows: 'to'});
+            edges.push({from: 16, to: 19, arrows: 'to'});
+            edges.push({from: 17, to: 20, arrows: 'to'});
+            edges.push({from: 18, to: 21, arrows: 'to'});
+            edges.push({from: 13, to: 23, arrows: 'to'});
+            edges.push({from: 23, to: 22, arrows: 'to'});
+            edges.push({from: 3, to: 24, arrows: 'to'});
+
             nodes[0]["level"] = 0;
             nodes[1]["level"] = 1;
             nodes[2]["level"] = 2;
@@ -228,6 +247,23 @@ $task3 = str_replace("N", $position, get_string('jstask3', 'qtype_stonesdebug'))
             nodes[7]["level"] = 4;
             nodes[8]["level"] = 4;
             nodes[9]["level"] = 4;
+            nodes[10]["level"] = 1;
+            nodes[11]["level"] = 1;
+            nodes[12]["level"] = 1;
+            nodes[13]["level"] = 2;
+            nodes[14]["level"] = 2;
+            nodes[15]["level"] = 2;
+            nodes[16]["level"] = 3;
+            nodes[17]["level"] = 3;
+            nodes[18]["level"] = 3;
+            nodes[19]["level"] = 4;
+            nodes[20]["level"] = 4;
+            nodes[21]["level"] = 4;
+            nodes[22]["level"] = 4;
+            nodes[23]["level"] = 3;
+            nodes[24]["level"] = 4;
+
+
 
 
             nodes[0].label = "(7, 31)\n38";
@@ -260,7 +296,57 @@ $task3 = str_replace("N", $position, get_string('jstask3', 'qtype_stonesdebug'))
             nodes[9].label = "(8, 66)\n74";
             nodes[9].color = "#00FFFF";
             nodes[9].borderWidth = "4";
-            nodes[9].color.border = "#00FF00";
+
+            nodes[10].label = "(8, 31)\n39";
+
+            nodes[11].label = "(14, 31)\n45";
+
+            nodes[12].label = "(7, 62)\n69";
+
+            nodes[13].label = "(8, 32)\n40";
+            nodes[13].color = "#00FFFF";
+
+            nodes[14].label = "(14, 62)\n76";
+            nodes[14].color = "#00FFFF";
+            nodes[14].borderWidth = "4";
+
+            nodes[15].label = "(7, 124)\n131";
+            nodes[15].color = "#00FFFF";
+            nodes[15].borderWidth = "4";
+
+            nodes[16].label = "(9, 32)\n41";
+
+            nodes[17].label = "(8, 33)\n41";
+
+            nodes[18].label = "(16, 32)\n48";
+
+            nodes[19].label = "(9, 64)\n73";
+            nodes[19].color = "#00FFFF";
+            nodes[19].borderWidth = "4";
+
+            nodes[20].label = "(8, 66)\n74";
+            nodes[20].color = "#00FFFF";
+            nodes[20].borderWidth = "4";
+
+            nodes[21].label = "(16, 64)\n80";
+            nodes[21].color = "#00FFFF";
+            nodes[21].borderWidth = "4";
+
+            nodes[22].label = "(8, 128)\n136";
+            nodes[22].color = "#00FFFF";
+            nodes[22].borderWidth = "4";
+
+            nodes[23].label = "(8, 64)\n72";
+            nodes[23].color = "#00FFFF";
+
+            nodes[24].label = "(9, 64)\n73";
+            nodes[24].color = "#00FFFF";
+            nodes[24].borderWidth = "4";
+
+
+
+
+
 
 
             // create a tree
@@ -365,7 +451,7 @@ $task3 = str_replace("N", $position, get_string('jstask3', 'qtype_stonesdebug'))
 
                 <tr>
                     <td><p class="maintext"><?php echo get_string('jsquestionmaxcount', 'qtype_stonesdebug') ?></p></td>
-                    <td><p><input name="digit" required pattern="#[0-9]{2}" style="width: 50px"></p></p></td>
+                    <td><p><input name="digit" style="width: 50px"></p></p></td>
                 </tr>
             </table>
 
