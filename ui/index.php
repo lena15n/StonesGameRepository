@@ -208,7 +208,7 @@ $task3 = str_replace("N", $position, get_string('jstask3', 'qtype_stonesdebug'))
             var connectionCount = [];
 
             // randomly create some nodes and edges
-            for (var i = 0; i < 25; i++) {
+            for (var i = 0; i < 29; i++) {
                 nodes.push({id: i, label: String(i)});
             }edges.push({from: 0, to: 11, arrows: 'to'});
             edges.push({from: 0, to: 10, arrows: 'to'});
@@ -237,6 +237,12 @@ $task3 = str_replace("N", $position, get_string('jstask3', 'qtype_stonesdebug'))
             edges.push({from: 23, to: 22, arrows: 'to'});
             edges.push({from: 3, to: 24, arrows: 'to'});
 
+
+            edges.push({from: 6, to: 25, arrows: 'to'});
+            edges.push({from: 6, to: 26, arrows: 'to'});
+            edges.push({from: 6, to: 27, arrows: 'to'});
+            edges.push({from: 12, to: 28, arrows: 'to'});
+
             nodes[0]["level"] = 0;
             nodes[1]["level"] = 1;
             nodes[2]["level"] = 2;
@@ -262,6 +268,12 @@ $task3 = str_replace("N", $position, get_string('jstask3', 'qtype_stonesdebug'))
             nodes[22]["level"] = 4;
             nodes[23]["level"] = 3;
             nodes[24]["level"] = 4;
+
+            nodes[25]["level"] = 4;
+            nodes[26]["level"] = 4;
+            nodes[27]["level"] = 4;
+
+            nodes[28]["level"] = 2;
 
 
 
@@ -337,11 +349,28 @@ $task3 = str_replace("N", $position, get_string('jstask3', 'qtype_stonesdebug'))
             nodes[22].borderWidth = "4";
 
             nodes[23].label = "(8, 64)\n72";
-            nodes[23].color = "#00FFFF";
 
             nodes[24].label = "(9, 64)\n73";
             nodes[24].color = "#00FFFF";
             nodes[24].borderWidth = "4";
+
+
+
+            nodes[25].label = "(9, 64)\n73";
+            nodes[25].color = "#00FFFF";
+            nodes[25].borderWidth = "4";
+
+            nodes[26].label = "(16, 64)\n80";
+            nodes[26].color = "#00FFFF";
+            nodes[26].borderWidth = "4";
+
+            nodes[27].label = "(8, 65)\n73";
+            nodes[27].color = "#00FFFF";
+            nodes[27].borderWidth = "4";
+
+            nodes[28].label = "(14, 62)\n76";
+            nodes[28].color = "#00FFFF";
+            nodes[28].borderWidth = "4";
 
 
 
